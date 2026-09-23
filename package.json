@@ -9,7 +9,7 @@
     "start": "node src/server.js",
     "test": "node --test",
     "check": "node --check src/client.js && node --check src/server.js",
-    "build:claude": "npx @anthropic-ai/mcpb@latest validate manifest.json && npx @anthropic-ai/mcpb@latest pack"
+    "build:claude": "npx --yes @anthropic-ai/mcpb@2.1.2 validate manifest.json && npx --yes @anthropic-ai/mcpb@2.1.2 pack"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.2",

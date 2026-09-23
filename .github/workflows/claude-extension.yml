@@ -15,9 +15,9 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
-      - run: npx @anthropic-ai/mcpb@latest validate manifest.json
-      - run: npx @anthropic-ai/mcpb@latest pack
+      - run: npm ci --omit=dev
+      - run: npx --yes @anthropic-ai/mcpb@2.1.2 validate manifest.json
+      - run: npx --yes @anthropic-ai/mcpb@2.1.2 pack
       - uses: actions/upload-artifact@v4
         with:
           name: trading212-controlled-mcpb
