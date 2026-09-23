@@ -35,7 +35,8 @@ For extra protection, restrict the API key to the machine/server IP in Trading 2
 
 After cloning the repository, run `npm install`, copy `.env.example` to `.env`, and add your own Trading 212 credentials locally. Never commit `.env`.
 
-- **Claude Desktop:** adapt `claude-desktop-config.example.json` with this repository's absolute path, then add it through Claude's local MCP/extension settings.
+- **Claude Desktop (one click):** download the `.mcpb` bundle from a GitHub Actions artifact or release, then open it with Claude Desktop and select **Install**. Claude will prompt for your Trading 212 API key and secret and stores them in the operating system's secure credential store. Build it locally with `npm run build:claude`.
+- **Claude Desktop (manual):** alternatively, adapt `claude-desktop-config.example.json` with this repository's absolute path.
 - **Codex:** install the local plugin or configure `mcp.json`. The portable `plugin.json` and `mcp.json` are at the repository root; `.codex-plugin/plugin.json` remains as a Codex compatibility manifest.
 
 ## Public ChatGPT and Claude connector

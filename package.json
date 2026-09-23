@@ -8,7 +8,8 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "node --test",
-    "check": "node --check src/client.js && node --check src/server.js"
+    "check": "node --check src/client.js && node --check src/server.js",
+    "build:claude": "npx @anthropic-ai/mcpb@latest validate manifest.json && npx @anthropic-ai/mcpb@latest pack"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.2",
