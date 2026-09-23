@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "trading212-controlled": {
+      "command": "node",
+      "args": ["${__dirname}/src/server.js"],
+      "env": {
+        "TRADING212_ENVIRONMENT": "demo"
+      }
+    }
+  }
+}

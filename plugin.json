@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "trading212-controlled",
+  "version": "1.1.0",
+  "description": "Trading 212 portfolio tools with controlled market-order execution.",
+  "author": {
+    "name": "Ruben Violinha"
+  },
+  "homepage": "https://github.com/rubenviolinha/trading212-mcp",
+  "repository": "https://github.com/rubenviolinha/trading212-mcp",
+  "license": "MIT",
+  "keywords": ["trading-212", "mcp", "claude", "chatgpt", "codex", "portfolio"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Trading 212 Controlled Trading",
+        "shortDescription": "Portfolio data with confirmed trading actions",
+        "longDescription": "Fetch Trading 212 account data and submit only separately previewed, explicitly confirmed market orders or cancellations.",
+        "developerName": "Ruben Violinha",
+        "category": "Finance",
+        "capabilities": ["Account data", "Portfolio analysis", "Confirmed market-order execution", "Confirmed order cancellation"],
+        "defaultPrompt": [
+          "Give me a concise portfolio overview.",
+          "Show my allocation and concentration risks.",
+          "Summarise my recent dividends."
+        ]
+      }
+    }
+  }
+}

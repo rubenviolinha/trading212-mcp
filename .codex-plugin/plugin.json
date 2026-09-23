@@ -1,0 +1,24 @@
+{
+  "name": "trading212-controlled",
+  "version": "1.1.0",
+  "description": "Trading 212 account data with two-step confirmed market orders and cancellations.",
+  "author": {
+    "name": "Local Trading 212 user"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Trading 212 Controlled Trading",
+    "shortDescription": "Portfolio data with confirmed trading actions",
+    "longDescription": "Fetch Trading 212 account data and submit only separately previewed, explicitly confirmed market orders or cancellations.",
+    "developerName": "Local Trading 212 user",
+    "category": "Finance",
+    "capabilities": ["Account data", "Portfolio analysis", "Confirmed market-order execution", "Confirmed order cancellation"],
+    "defaultPrompt": [
+      "Give me a concise portfolio overview.",
+      "Show my allocation and concentration risks.",
+      "Summarise my recent dividends."
+    ],
+    "brandColor": "#1F8A70"
+  }
+}

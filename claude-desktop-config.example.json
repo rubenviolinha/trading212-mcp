@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "trading212-controlled": {
+      "command": "node",
+      "args": ["/absolute/path/to/trading212-mcp/src/server.js"],
+      "cwd": "/absolute/path/to/trading212-mcp"
+    }
+  }
+}
