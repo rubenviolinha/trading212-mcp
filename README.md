@@ -43,6 +43,8 @@ After cloning the repository, run `npm install`, copy `.env.example` to `.env`, 
 
 GitHub distribution supports local installation, but it is not a public connector by itself. A public ChatGPT or Claude connector needs a hosted Streamable HTTP MCP service that securely stores each user's own credentials and authorizes each request. See [the public-hosting plan](docs/public-hosting.md) before attempting deployment.
 
+Public-distribution documents: [privacy policy](docs/privacy-policy.md), [terms of use](docs/terms-of-use.md), [financial-risk disclaimer](docs/financial-risk-disclaimer.md), and [support](SUPPORT.md).
+
 ## API and data notes
 
 - Authentication is HTTP Basic authentication using API key as username and API secret as password. The server creates this header in memory and never logs it.
